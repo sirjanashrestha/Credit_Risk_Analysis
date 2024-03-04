@@ -2,22 +2,10 @@
 
 ## Overview of the analysis
 
-This project aims to predict credit risk for a peer-to-peer lending services company, Lending Club using Supervised machine learning algorithms. The credit card dataset is analyzed using the RandomOverSampler and SMOTE algorithms, and undersampled using the ClusterCentroids algorithm. Finally, we have used combinatorial approach of over- and undersampling using the SMOTEENN algorithm. Then we have compared two new machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk. Finally, we have evaluated the  performance of these models.
-
-The purpose of this analysis are;
-- Use Resampling Models to Predict Credit Risk
-- Use the SMOTEENN Algorithm to Predict Credit Risk
-- Use Ensemble Classifiers to Predict Credit Risk
+The objective of this project is to forecast credit risk for a peer-to-peer lending services provider, Lending Club, employing supervised machine learning methods. Our analysis involves scrutinizing a credit card dataset using various techniques to address class imbalance, including RandomOverSampler, SMOTE, and undersampling with the ClusterCentroids algorithm. Additionally, we explore a combined approach of over- and undersampling using the SMOTEENN algorithm. Subsequently, we compare the performance of two novel machine learning models, BalancedRandomForestClassifier and EasyEnsembleClassifier, which are designed to mitigate bias in predicting credit risk. Finally, we assess the effectiveness of these models in terms of predictive performance.
 
 Resources:
 - Data Source: LoanStats_2019Q1.csv
-- Tools: 
-        i. NumPy, version 1.11 or later
-        ii. SciPy, version 0.17 or later
-        iii. Scikit-learn, version 0.21 or later
-
-## Results
-The balanced accuracy scores and the precision and recall scores of all six machine learning models.
 
 ### Naive Random Oversampling
 The balanced accuracy score of this model is 64%. Out of all the loan that the model predicted would be high risk, only 1% were actually high risk. The model predicted 61% outcome correctly for the high risk credit. The precision of the model is 99% with a sensitivity of 68%.
