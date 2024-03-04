@@ -7,22 +7,26 @@ The objective of this project is to forecast credit risk for a peer-to-peer lend
 Resources:
 - Data Source: LoanStats_2019Q1.csv
 
+## Oversampling Approach
 ### Naive Random Oversampling
 The balanced accuracy score of this model is 64%. Out of all the loan that the model predicted would be high risk, only 1% were actually high risk. The model predicted 61% outcome correctly for the high risk credit. The precision of the model is 99% with a sensitivity of 68%.
 ![Getting Started](./images/Naive_oversampling.png)
 
-### SMOTE model
+### SMOTE model (Synthetic Minority Oversampling Technique)
  The balanced accuracy score of this model is 59%. The high_risk precision is about 1% only with 61% sensitivity which makes a F1 of 1% only. Due to high number of low_risk population, its precision is 99% with a sensitivity of 57%.
  ![Getting Started](./images/Cluster_centroid.png)
 
+## Undersampling Approach
 ### ClusterCentroids model
 The balanced accuracy score of this model is 62%. The high_risk precision of this model is about 1% only with 61% sensitivity which makes a F1 of 2% only. The precision is 99% with a sensitivity of 57%.
 ![Getting Started](./images/SMOTE_oversampling.png)
 
-### SMOTEN model
+## Combination Approach
+### SMOTEENN model (SMOTE+Edited Nearest Neighbors)
 The balanced accuracy score of this model is 63%. The high_risk precision of this model is about 1% only with 70% sensitivity which makes a F1 of 2% only. The precision is 99% with a sensitivity of 58%.
 ![Getting Started](./images/SMOTEN.png)
 
+## Balanced Approach
 ### BalancedRandomForestClassifier model
 The balanced accuracy score of this model has improved to 78%. The high_risk precision of this model is about 1% only with 70% sensitivity which makes a F1 of 6%. The precision is 99% with a sensitivity of 87%.
 ![Getting Started](./images/Balanced_rf.png)
